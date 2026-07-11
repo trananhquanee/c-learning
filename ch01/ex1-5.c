@@ -27,10 +27,10 @@ int main(void){
     upper = 300;
     step = 10;
     
-    printf("%8s\t%8s\n", "Fahr", "Celcius");
-    for(fahr = lower; fahr <= upper; fahr = fahr + step){
+    printf("%8s\t%8s\n", "Fahr", "Celsius");
+    for(fahr = upper; fahr >= lower; fahr = fahr - step){
         celsius = (5.0 / 9.0) * (fahr - 32.0);
-        printf("%8f\t%8f\n", fahr, celsius);
+        printf("%8.1f\t%8.1f\n", fahr, celsius);
     }
     return 0;
 }
